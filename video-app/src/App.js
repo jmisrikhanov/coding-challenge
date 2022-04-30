@@ -1,7 +1,10 @@
-import "./App.css";
+import { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "./context/AuthContext";
+import AppRouter from "./router/Router";
 
 function App() {
-  return <div className="App"></div>;
+  return <AppRouter />;
 }
 
 export default App;
